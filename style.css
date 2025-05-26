@@ -81,7 +81,7 @@ h1 {
   height: auto;
   max-height: 200px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 0.5rem;
   display: block;
 }
