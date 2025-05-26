@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark">
   <div class="background">
     <header>
-      <div class="profile-card">
+      <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙 / ☀️</button>
+      </div>
+      <div class="profile-card fade-in">
         <img src="sua-foto.jpg" alt="Foto Wesley Vila Nova" class="profile-pic" />
         <h1>Wesley Vila Nova</h1>
         <p class="subtitle">Desenvolvedor Android • Kotlin • Jetpack Compose • AWS</p>
@@ -24,55 +27,47 @@
       </div>
     </header>
 
-    <main>
+    <main class="fade-in">
       <section>
         <h2>Sobre Mim</h2>
         <p>
-          Sou desenvolvedor Android com experiência sólida em Kotlin, arquitetura Clean, Compose, Firebase, segurança (LGPD) e AWS. Atuo em projetos de grande porte como o aplicativo Íon Investimentos do Banco Itaú, com foco em performance, testes e qualidade.
+          Desenvolvedor Android com experiência sólida em Kotlin, arquitetura Clean, Compose, Firebase, segurança (LGPD) e AWS. Atuo em projetos de grande porte como o Íon Investimentos (Banco Itaú), com foco em performance, testes e qualidade.
         </p>
       </section>
 
       <section>
         <h2>Experiência</h2>
         <ul>
-          <li>
-            <strong>NTT DATA / Banco Itaú</strong> (2022 - Atual)<br />
-            Desenvolvimento do app Íon, fundação da arquitetura do app, automações, segurança, testes unitários (+80%), redução de bugs em produção (+90%).
-          </li>
-          <li>
-            <strong>App Criptomoedas</strong> (2022)<br />
-            Acessibilidade, arquitetura limpa, Firebase e CI/CD.
-          </li>
-          <li>
-            <strong>Pet Shopping (Freelancer)</strong> (2021 - 2022)<br />
-            Inventário, vendas, push notification e Firebase Crashlytics.
-          </li>
+          <li><strong>Banco Itaú</strong> (2022 - Presente) – Apps como Íon e automações com GitHub Actions</li>
+          <li><strong>CriptoApp</strong> (2022) – Firebase, Clean Architecture, acessibilidade</li>
+          <li><strong>Freelancer PetShop</strong> (2021-2022) – Notificações push, vendas e Firebase</li>
         </ul>
       </section>
 
       <section>
         <h2>Conquistas</h2>
         <ul>
-          <li>Redução de 80% no tempo de carregamento</li>
-          <li>Automação com bots no GitHub (PRs, code reviews)</li>
-          <li>Documentações completas e OKRs alcançadas</li>
+          <li>Redução de bugs em produção em 90%</li>
+          <li>Cobertura de testes em +80%</li>
+          <li>Bots para automação no GitHub</li>
         </ul>
       </section>
 
       <section>
         <h2>Formação & Certificações</h2>
         <ul>
-          <li>🎓 Análise e Desenvolvimento de Sistemas - Estácio (2024)</li>
+          <li>🎓 Análise e Desenvolvimento de Sistemas – Estácio (2024)</li>
           <li>✅ AWS Certified Cloud Practitioner</li>
-          <li>🔐 Fundamentos LGPD</li>
-          <li>📚 Jetpack Compose, Design Patterns, Kotlin em Ação</li>
+          <li>📚 Kotlin em Ação, Clean Architecture, Design Patterns</li>
         </ul>
       </section>
     </main>
 
-    <footer>
+    <footer class="fade-in">
       <p>© 2025 Wesley Vila Nova • Desenvolvedor Android</p>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
