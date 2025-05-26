@@ -218,4 +218,60 @@ blockquote {
 .clean::after { width: 88%; }
 .cicd::after { width: 80%; }
 
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(15, 32, 39, 0.95);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 999;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.navbar .nav-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: var(--accent);
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ajuste topo da main por causa do menu fixo */
+.background {
+  padding-top: 100px;
+}
+
 
