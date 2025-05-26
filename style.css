@@ -138,3 +138,27 @@ footer {
     padding: 1rem;
   }
 }
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #388e3c;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--accent);
+  margin: 1rem 0;
+  padding-left: 1rem;
+  color: #ccc;
+}
+
