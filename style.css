@@ -161,4 +161,61 @@ blockquote {
   padding-left: 1rem;
   color: #ccc;
 }
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: var(--bg-alt);
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.skills label {
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.bar {
+  height: 10px;
+  border-radius: 10px;
+  background: #444;
+  position: relative;
+  margin-bottom: 0.3rem;
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: var(--accent);
+}
+
+.kotlin::after { width: 95%; }
+.compose::after { width: 90%; }
+.firebase::after { width: 85%; }
+.clean::after { width: 88%; }
+.cicd::after { width: 80%; }
+
 
