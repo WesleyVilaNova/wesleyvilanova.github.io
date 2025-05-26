@@ -77,13 +77,14 @@ h1 {
 }
 .project-card img {
   width: 100%;
-  max-height: 200px;
-  object-fit: contain;
+  height: 200px; /* altura fixa */
+  object-fit: cover; /* preenche a área, cortando se precisar */
   border-radius: 16px;
   margin-bottom: 0.5rem;
   display: block;
   background-color: #ffffff10;
 }
+
 
 ul {
   list-style: disc;
