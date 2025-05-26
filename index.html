@@ -4,9 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wesley Vila Nova - Desenvolvedor Android</title>
+
+  <!-- Fontes e Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Estilo -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS - Scroll Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:title" content="Wesley Vila Nova — Desenvolvedor Android" />
+  <meta property="og:description" content="Portfólio profissional com experiência em Kotlin, Compose, Firebase, Clean Architecture e mais." />
+  <meta property="og:image" content="https://seuusuario.github.io/wesley.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Portfólio do Wesley Vila Nova, desenvolvedor Android especializado em Kotlin, Compose e Clean Architecture." />
 </head>
 <body class="dark">
   <div class="background">
@@ -28,56 +42,54 @@
       </div>
     </header>
 
-    <main class="fade-in">
-      <section>
+    <main>
+      <section data-aos="fade-up">
         <h2>👋 Sobre Mim</h2>
         <p>
-          Sou um desenvolvedor Android apaixonado por criar experiências móveis modernas e performáticas. Tenho atuado com Kotlin, Jetpack Compose, Firebase e Clean Architecture, focando sempre em qualidade, testes, acessibilidade e segurança. Atualmente contribuo com o app Íon do Banco Itaú, pela NTT Data.
+          Desenvolvedor Android com experiência sólida em Kotlin, arquitetura Clean, Compose, Firebase, segurança (LGPD) e AWS. Atualmente no app Íon Investimentos do Banco Itaú, pela NTT Data.
         </p>
       </section>
 
-      <section>
-        <h2>🚀 Projetos & Destaques Técnicos</h2>
-        <ul>
-          <li><strong>Íon Investimentos (Banco Itaú)</strong>: Fundação da arquitetura, integração de bibliotecas, segurança, Dexguard, automações (GitHub Actions), OKRs.</li>
-          <li><strong>App Cripto (NTT)</strong>: Firebase Remote Config, Crashlytics, arquitetura limpa, acessibilidade WCAG.</li>
-          <li><strong>PetShop App (Freelancer)</strong>: Funcionalidades de vendas, estoque e notificações push integradas ao Firebase.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>💼 Experiência</h2>
-        <ul>
-          <li><strong>Banco Itaú / NTT DATA</strong> (2022 - Presente)</li>
-          <li><strong>NTT DATA</strong> – CriptoApp (2022)</li>
-          <li><strong>Freelancer Android</strong> – App PetShop (2021 - 2022)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>📈 Conquistas Técnicas</h2>
-        <ul>
-          <li>📉 Redução de falhas em produção em 90%</li>
-          <li>🧪 Cobertura de testes superior a 80%</li>
-          <li>🧠 Automatizações de processos com bots no GitHub</li>
-          <li>📄 Documentação completa em todos os projetos</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>🎓 Formação & Certificações</h2>
-        <div class="certifications">
-          <ul>
-            <li>🎓 Análise e Desenvolvimento de Sistemas – Estácio (2024)</li>
-            <li>✅ AWS Certified Cloud Practitioner</li>
-            <li>🔐 Certificação LGPD (Fundamentos)</li>
-            <li>📚 Jetpack Compose: Do Zero ao Definitivo</li>
-            <li>📖 Clean Architecture, Design Patterns, Kotlin em Ação</li>
-          </ul>
+      <section data-aos="fade-up">
+        <h2>🚀 Projetos em Destaque</h2>
+        <div class="projects">
+          <div class="project-card">
+            <img src="ion-app.png" alt="Íon App" />
+            <h3>Íon Investimentos</h3>
+            <p>App de investimentos do Banco Itaú, com foco em segurança, modularização e performance.</p>
+            <span><strong>Tecnologias:</strong> Kotlin, Compose, Koin, Firebase</span>
+          </div>
+          <div class="project-card">
+            <img src="cripto-app.png" alt="CriptoApp" />
+            <h3>CriptoApp</h3>
+            <p>Aplicativo de criptomoedas com arquitetura limpa e integração com Firebase e acessibilidade.</p>
+            <span><strong>Tecnologias:</strong> MVVM, Firebase, LGPD</span>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section data-aos="fade-up">
+        <h2>📈 Habilidades Técnicas</h2>
+        <div class="skills">
+          <div><label>Kotlin</label><div class="bar kotlin"></div></div>
+          <div><label>Jetpack Compose</label><div class="bar compose"></div></div>
+          <div><label>Firebase</label><div class="bar firebase"></div></div>
+          <div><label>Clean Architecture</label><div class="bar clean"></div></div>
+          <div><label>CI/CD & GitHub Actions</label><div class="bar cicd"></div></div>
+        </div>
+      </section>
+
+      <section data-aos="fade-up">
+        <h2>🎓 Formação & Certificações</h2>
+        <ul>
+          <li>🎓 Análise e Desenvolvimento de Sistemas – Estácio (2024)</li>
+          <li>✅ AWS Certified Cloud Practitioner</li>
+          <li>🔐 Certificação LGPD</li>
+          <li>📚 Jetpack Compose, Clean Architecture, Design Patterns</li>
+        </ul>
+      </section>
+
+      <section data-aos="fade-up">
         <h2>💬 Frase que me inspira</h2>
         <blockquote>
           "A única maneira de ir rápido, é ir bem." – Robert C. Martin
@@ -90,6 +102,9 @@
     </footer>
   </div>
 
+  <!-- JS -->
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
